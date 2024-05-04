@@ -1,0 +1,12 @@
+{
+    "name": "willowaway",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "aws s3 sync . s3://willowawsbucket --profile default && aws cloudfront create-invalidation --distribution-id E2IHV7X1UBLUQR --paths \"/*\" --profile default"
+    },
+    "keywords": [],
+    "author": "Willow Hughes",
+    "license": "ISC"
+}
