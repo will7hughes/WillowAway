@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
-// import Resume from "./components/Resume/ResumeNew";
+import Resume from "./components/Resume/Resume";
 
 import {
   BrowserRouter as Router,
@@ -39,6 +39,7 @@ function App() {
         <Home />
         <Projects />
         <About />
+        <Resume />
         {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />

@@ -1,16 +1,12 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-// import {
-//   FaWater,
-//   FaQuestion,
-//   FaMicrophone,
-//   FaClock
-// } from "react-icons/fa";
-import clearWaterLogo from "../../Assets/Projects/clear-water-logo-md.png";
-import questContinueLogo from "../../Assets/Projects/quest-continue-logo-md.png";
-// import dialectorLogo from "../../Assets/Projects/dialector-logo.png";
-// import cocomoLogo from "../../Assets/Projects/cocomo-logo.png";
+import Button from "react-bootstrap/Button";
+
+import clearWaterLogo from "../../Assets/Projects/clear-water-logo.png";
+import questContinueLogo from "../../Assets/Projects/quest-continue-logo.png";
+import dialektorLogo from "../../Assets/Projects/dialektor-logo.png";
+import cocomoLogo from "../../Assets/Projects/cocomo-logo.png";
 
 function Projects() {
   return (
@@ -40,12 +36,32 @@ function Projects() {
           backgroundColor="#000080"
           ghLink="https://github.com/willowaway/Clear-Water"
         />
-        {/* <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-          </Col>
-          <Col md={4} className="project-card">
-          </Col>
-        </Row> */}
+
+        <ProjectCard
+          logo={dialektorLogo}
+          title="Dialektor"
+          description="Dialektor is a tool for recording audio and creating a ledger in order to study the changes overtime."
+          languages="JavaScript"
+          backgroundColor="#f1e05a"
+          ghLink="https://github.com/willowaway/Dialektor"
+        />
+
+        <ProjectCard
+          logo={cocomoLogo}
+          title="Cocomo"
+          description="The model utilizes team size and lines of code as input variables, offering a flexible framework for project management. By performing basic or intermediate calculations, it provides valuable insights into staff size, effort estimates, and development time, with a particular focus on sensitivity to changes in team size and lines of code."
+          languages="Kotlin"
+          backgroundColor="#A97BFF"
+          ghLink="https://github.com/willowaway/Cocomo"
+        />
+        <Button
+            variant="primary"
+            href="https://github.com/willowaway"
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            View More
+          </Button>
       </Container>
     </Container>
   );
