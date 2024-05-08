@@ -444,10 +444,6 @@ button:focus {
     padding: 0 !important;
 }
 
-.blockquote-footer {
-    color: #a588c0 !important;
-}
-
 /* --------- */
 /* Projects */
 /* --------- */
@@ -624,6 +620,16 @@ button:focus {
     .about-img {
         padding-top: 0 !important;
     }
+}
+
+.blockquote-footer {
+    color: #88c0ac !important;
+    text-align: right;
+}
+
+.about-poem {
+    color: #88c0ac !important;
+    text-align: left;
 }
 
 /* --------- */

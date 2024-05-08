@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
+import AboutCard from "./AboutCard";
 import womanCodingImg from "../../Assets/woman-coding.svg";
 import Toolstack from "./Toolstack";
 
@@ -21,7 +21,7 @@ function About() {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               <strong className="green">Who</strong> am I?
             </h1>
-            <Aboutcard />
+            <AboutCard />
           </Col>
           <Col
             md={5}
