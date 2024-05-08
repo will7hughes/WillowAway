@@ -4,6 +4,7 @@ import Techstack from "./Techstack";
 import AboutCard from "./AboutCard";
 import womanCodingImg from "../../Assets/woman-coding.svg";
 import Toolstack from "./Toolstack";
+import { Fade } from "react-reveal";
 
 function About() {
   return (
@@ -18,9 +19,11 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="green">Who</strong> am I?
-            </h1>
+            <Fade left duration={1000}>
+              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+                <strong className="green">Who</strong> am I?
+              </h1>
+            </Fade>
             <AboutCard />
           </Col>
           <Col
