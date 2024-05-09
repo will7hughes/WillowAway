@@ -18,6 +18,7 @@ import {
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -36,14 +37,11 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
-        <Home />
-        <Projects />
-        <About />
-        <Resume />
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-        </Routes> */}
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/"/>} />
+        </Routes>
         <Footer />
       </div>
     </Router>
