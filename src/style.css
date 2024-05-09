@@ -702,6 +702,19 @@ button:focus {
 
 .contact-send-btn {
     width: 100%;
+    margin-bottom: 1rem;
+}
+
+#message-toast {
+    width: 100% !important;
+}
+
+.message-toast-success {
+    color: var(--light-green);
+}
+
+.message-toast-failed {
+    color: #ff0000;
 }
 
 /* --------- */
