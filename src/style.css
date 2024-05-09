@@ -7,6 +7,8 @@
 }
 
 html {
+    overflow-x: hidden;
+
     --section-background-color: linear-gradient(to bottom left,
             rgba(17, 16, 16, 0.582),
             rgba(5, 14, 5, 0.904));
@@ -14,8 +16,10 @@ html {
     --image-gradient: linear-gradient(to bottom left,
             rgba(17, 16, 16, 0.678),
             rgba(10, 20, 22, 0.863));
-            
-  overflow-x: hidden;
+}
+
+:root, html, body, #root, .App {
+    height: 100%;
 }
 
 .green {
@@ -406,48 +410,6 @@ button:focus {
 }
 
 /* --------- */
-/* Footer */
-/* --------- */
-.footer {
-    background-color: rgb(2, 15, 10);
-    bottom: 0 !important;
-    padding-top: 10px !important;
-    padding-bottom: 8px !important;
-}
-
-.footer-copywright {
-    text-align: center !important;
-}
-
-.footer-body {
-    z-index: 1;
-    text-align: center !important;
-}
-
-@media (max-width: 767px) {
-    .footer-copywright {
-        text-align: center !important;
-    }
-
-    .footer-body {
-        text-align: center !important;
-    }
-}
-
-.footer h3 {
-    font-size: 1em;
-    color: white !important;
-    margin-top: 0.5em !important;
-    margin-bottom: 0.5em !important;
-}
-
-.footer-icons {
-    margin-top: 0.5em !important;
-    margin-bottom: 0.5em !important;
-    padding: 0 !important;
-}
-
-/* --------- */
 /* Projects */
 /* --------- */
 
@@ -646,7 +608,7 @@ button:focus {
 .resume-section {
     position: relative !important;
     padding-top: 50px !important;
-    padding-bottom: 50px !important;
+    padding-bottom: 80px !important;
     background-image: var(--section-background-color) !important;
     color: white !important;
 }
@@ -727,62 +689,58 @@ button:focus {
     border: 2px solid #8a49a8;
 }
 
-.like-item {
+/* --------- */
+/* Contact */
+/* --------- */
+
+.contact {
+    height: 100%;
+    padding-top: 80px !important;
+    background-image: var(--section-background-color) !important;
+    color: white !important;
+}
+
+.contact-send-btn {
+    width: 100%;
+}
+
+/* --------- */
+/* Footer */
+/* --------- */
+.footer {
+    background-color: rgb(2, 15, 10);
     padding-top: 10px !important;
-    font-size: 1.1em !important;
-    font-family: sans-serif !important;
+    padding-bottom: 8px !important;
 }
 
-.like-btn {
-    background-color: #934cce5e !important;
-    border-color: #934cce5e !important;
-    padding: 0.25rem 0.98rem !important;
-    border-radius: 5px !important;
-    line-height: 1.4 !important;
-    transition: 0.3s ease !important;
-}
-
-.like-btn:hover {
-    transform: translateY(-2px) !important;
-    background-color: #a24dd386 !important;
-    border-color: #a24dd386 !important;
-}
-
-.animate-like {
-    animation-name: likeAnimation;
-    animation-fill-mode: forwards;
-    animation-duration: 0.85s;
-}
-
-@keyframes likeAnimation {
-    0% {
-        transform: scale(1.5);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.fork-btn {
-    font-size: 1.1em !important;
-    padding-top: 10px !important;
-}
-
-.fork-btn-inner {
-    line-height: 1.4em !important;
-    background-color: #934cce5e !important;
-    padding: 0.25rem 1.1rem !important;
-    vertical-align: middle !important;
+.footer-copywright {
     text-align: center !important;
 }
 
-.fork-btn-inner:hover {
-    transform: translateY(-2px) !important;
-    background-color: #a24dd386 !important;
-    border-color: #a24dd386 !important;
+.footer-body {
+    z-index: 1;
+    text-align: center !important;
 }
 
-.fork-btn-inner::after {
-    display: none !important;
+@media (max-width: 767px) {
+    .footer-copywright {
+        text-align: center !important;
+    }
+
+    .footer-body {
+        text-align: center !important;
+    }
+}
+
+.footer h3 {
+    font-size: 1em;
+    color: white !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.footer-icons {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    padding: 0 !important;
 }

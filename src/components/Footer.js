@@ -13,7 +13,7 @@ function Footer() {
   let year = date.getFullYear();
   return (
     <Fade bottom duration={1000}>
-      <Container fluid className="footer">
+      <Container fluid className="footer fixed-bottom">
         <Row>
           <Col md="4" className="footer-copywright">
             <h3>Designed and Developed by Willow Hughes</h3>

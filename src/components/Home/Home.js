@@ -5,6 +5,8 @@ import Intro from "./Intro";
 import Projects from "../Projects/Projects";
 import { Fade } from "react-reveal";
 import { useState } from 'react';
+import About from "../About/About";
+import Resume from "../Resume/Resume";
 
 function Home() {
     const [open = false, setOpen] = useState(false);
@@ -42,6 +44,9 @@ function Home() {
         </Container>
       </Fade>
       <Intro />
+      <Projects />
+      <About />
+      <Resume />
     </section>
 
   );

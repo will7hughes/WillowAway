@@ -9,6 +9,7 @@ import { HashLink } from 'react-router-hash-link';
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
+  AiOutlineMessage,
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -54,14 +55,14 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <HashLink className="nav-link" to="#" onClick={() => updateExpanded(false)}>
+              <HashLink className="nav-link" to="/home/#" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </HashLink>
             </Nav.Item>
 
             <Nav.Item>
               <HashLink className="nav-link"
-                to="#project"
+                to="/home/#project"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -73,7 +74,7 @@ function NavBar() {
 
             <Nav.Item>
               <HashLink className="nav-link"
-                to="#about"
+                to="/home/#about"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
@@ -82,22 +83,22 @@ function NavBar() {
 
             <Nav.Item>
               <HashLink className="nav-link"
-                to="#resume"
+                to="/home/#resume"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </HashLink>
             </Nav.Item>
             
-            {/* <Nav.Item>
+            <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <AiOutlineMessage style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
-            </Nav.Item> */}
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
